@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/cup.png" type="image/x-icon">
+    <title>ChanomGPT</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Message -->
+    <section class="msg-section">
+        <div class="res-msg tiktok not-display" id="tiktok1">
+            <img src="img/cup.png" alt="" width="22px" height="22px">
+            <div class="res-text">
+                <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@thenun_valak/video/7331847497461009696" data-video-id="7331847497461009696" style="max-width: 605px;min-width: 325px;margin: 0; " > <section> <a target="_blank" title="@thenun_valak" href="https://www.tiktok.com/@thenun_valak?refer=embed">@thenun_valak</a> Your trio is back 😘 <a title="thenun" target="_blank" href="https://www.tiktok.com/tag/thenun?refer=embed">#thenun</a> <a title="foryou" target="_blank" href="https://www.tiktok.com/tag/foryou?refer=embed">#foryou</a> <a target="_blank" title="♬ original sound - stylevintee" href="https://www.tiktok.com/music/original-sound-7077778619107494683?refer=embed">♬ original sound - stylevintee</a> </section> </blockquote> 
+            </div>
+        </div>
+        <!-- New message would appear here! -->
+    </section>
+
+    <!-- Header Navigation -->
+    <nav class="header-navigation">
+        <div>
+            <span class="nav-icon side-nav-icon">
+                <img src="img/side-nav.png" alt="" width="20px">
+            </span>
+            <span class="nav-icon new-chat-icon">
+                <img src="img/new-chat.png" alt="">
+            </span>
+            <span class="nav-icon version-icon">
+                <h3>ChanomGPT</h3>
+                <img src="img/drop.png" alt="">
+            </span>  
+            <!-- Version Drop Down -->
+            <div class="version-dropdown">
+                <span class="nav-icon">
+                    <img src="img/chanom.png" alt="" width="23px" height="20">
+                    <span>ChanomGPT</span>
+                    <img src="img/checklist.png" alt="" width="20px" height="20" style="margin-left: 50%;">
+                </span>
+                <span class="nav-icon upgrade-version">
+                    <img src="img/shining.png" alt="" width="21px" height="21">
+                    <span>ChanomGPT Plus</span>
+                </span>
+                <span class="nav-icon upgrade-version">
+                    <img src="img/hot-deal.png" alt="" width="22px" height="21">
+                    <span>Skibidi Rizz GyatGPT</span>
+                </span>
+            </div>
+        </div>
+        <div>
+            <span class="nav-icon share-icon not-display">
+                <img src="img/share.png" alt="" width="22px">
+            </span>
+            <img class="profile-icon" src="img/sadd.jpg" alt="">
+            <!-- Profile Drop Down -->
+            <div class="profile-dropdown">
+                <span class="nav-icon" id="contact-us">
+                    <img src="img/contact.png" alt="" width="24px" height="24">
+                    <span>ติดต่อเรา</span>
+                </span>
+                <span class="nav-icon" id="setting">
+                    <img src="img/setting.png" alt="" width="19px" height="19" style="margin-left: 2.5px; margin-right: 12px;">
+                    <span>การตั้งค่า</span>
+                </span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Chat-Box -->
+    <section class="chat-section">
+        <div class="chat-box">
+            <span class="attach-icon">
+                <img src="img/attach.png" alt="" width="22px">
+            </span>
+            <input type="text" name="text-input " id="text-input" placeholder="ข้อความChanomGPT" autocomplete="off">
+            <button class="send-button" id="send-button">
+                <img src="img/send.png" alt="" width="15px">
+            </button>
+
+            <!-- Dev mode -->
+            <!-- <button onclick="displayShareIcon()">Dev</button> -->
+            
+        </div>
+        <p>ChanomGPT can make mistakes. Let's search Google instead lol.</p>
+    </section>
+
+    <!-- Side Navigation -->
+    <nav class="side-navigation">
+        <div class="side-top-nav">
+            <span class="nav-icon side-nav-icon">
+                <img src="img/side-nav.png" alt="" width="20px">
+            </span>
+            <span class="nav-icon new-chat-icon">
+                <img src="img/new-chat.png" alt="">
+            </span>
+        </div>
+        <div class="side-mid-nav scroll-container">
+
+            <span class="nav-icon" onclick="eventNewChatRoom()">  
+                <img src="img/cup.png" alt="" width="20px" height="20px">    
+                <span style="display: flex; align-items: center;">ChanomGPT</span>
+            </span>
+
+            <span class="nav-icon" onclick="autoSend('About this sussy baka project')">
+                <img src="img/explore.png" alt="" width="18px" height="18">
+                <span>เกี่ยวกับโปรเจคนี้</span>
+            </span>
+
+            <!-- New chat room would appear here! -->
+        </div>
+    </nav>
+    
+    <!-- Pop Up -->
+    <div class="pop-up">
+        <div class="pop-up-content">
+            <div class="pop-up-title">
+                <h2 id="pop-up-title-text">Title EIEI</h2>
+                <span class="close-pop-up" onclick="closePopUp()">
+                    <img src="img/close.png" alt=""  width="10px" height="10px">
+                </span>
+            </div>
+            <div class="pop-up-body"></div>
+        </div>
+    </div>
+    
+
+    <script type="text/javascript" src="ui.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+    <script async src="https://www.tiktok.com/embed.js"></script>
+
+</body>
+</html>
