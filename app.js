@@ -370,7 +370,7 @@ const generateBotResponse = (userInput) => {
                 return new BotMsg(message,img,tiktok);
             }
             else if (randomNum === 4) {
-                let message = 'ผมไม่รู้'
+                let message = 'ตูไม่รู้'
                 let img = 'img/muhahaha.gif';
                 let tiktok = null;
                 return new BotMsg(message,img,tiktok);
@@ -382,7 +382,7 @@ const generateBotResponse = (userInput) => {
                 return new BotMsg(message,img,tiktok);
             }
             else if (randomNum === 6) {
-                let message = 'สำหรับคำถาม '+userMessage+' ผมก็ไม่เหมือนกัน 5555 ไปถาม Google ดิ'
+                let message = 'สำหรับคำถาม '+userMessage+' เค้าก็ไม่รู้เหมือนกัน 5555 ไปถาม Google ดิ'
                 let img = 'img/cat-laugh.gif';
                 let tiktok = null;
                 return new BotMsg(message,img,tiktok);
