@@ -55,7 +55,7 @@ const chatRoomRepo = [];
 const msgSection = document.querySelector(".msg-section");
 let currentChatRoomId = -1;     // -1 is new chat room
 let botMsgId = 0;       // Contain current ID of bot message 
-const chatRoomName = ['แชทลิง 5555','คุยกับเราคงไม่มีสาวให้คุยด้วยแน่ๆ','ต้าวอ้วงไม่ไปทำงานหรอนาบบ','มันเหงาจริงด้วย','สภาพอย่างงี้เกรด D แน่ๆ','ขี้เกียจตั้งชื่อแล้วพอเหอะ','Gyattttttt','ว่างหรอนาบบ','ขยันสร้างห้องใหม่จังนะ','ชื่อไรดีหว่า'];
+const chatRoomName = ['แชทลิง 5555','ไม่มีสาวให้คุยด้วยแน่ๆ','ต้าวอ้วงไม่ไปทำงานหรอนาบบ','มันเหงาจริงด้วย','สภาพงี้เกรด D แน่ๆ','ขี้เกียจตั้งชื่อแล้วว','Gyattttttt','ว่างหรอนาบบ','ขยันสร้างห้องใหม่จังนะ','ชื่อไรดีหว่า'];
 for (let index = 10; index <= 40; index++) {
     chatRoomName.push('กุขี้เกียจตั้งชื่อแล้วพอสักทียย '+ (index - 9));
 }
