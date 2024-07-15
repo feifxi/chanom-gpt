@@ -1,5 +1,4 @@
-console.log('App.js Start');
-
+// js day 1
 class BotMsg {
     constructor(text, img, tiktok) {
         this.text = text;
@@ -55,8 +54,8 @@ const chatRoomRepo = [];
 
 const msgSection = document.querySelector(".msg-section");
 let currentChatRoomId = -1;     // -1 is new chat room
-let botMsgId = 0;       // Contain current ID of bot message - bot can write the new response to the lastest bot message box
-const chatRoomName = ['แชทลิง 5555','คุยกับกุคงไม่มีสาวให้คุยด้วยแน่ๆ','ต้าวอ้วงไม่ไปทำงานหรอนาบบ','มันเหงาจริงด้วย','สภาพอย่างงี้เกรด D แน่ๆ','กุขี้เกียจตั้งชื่อแล้วพอเหอะ','Gyattttttt','มึงว่างหรอ','ขยันสร้างห้องใหม่จังนะมึงเนี่ย','ชื่อไรดีหว่า'];
+let botMsgId = 0;       // Contain current ID of bot message 
+const chatRoomName = ['แชทลิง 5555','คุยกับเราคงไม่มีสาวให้คุยด้วยแน่ๆ','ต้าวอ้วงไม่ไปทำงานหรอนาบบ','มันเหงาจริงด้วย','สภาพอย่างงี้เกรด D แน่ๆ','ขี้เกียจตั้งชื่อแล้วพอเหอะ','Gyattttttt','ว่างหรอนาบบ','ขยันสร้างห้องใหม่จังนะ','ชื่อไรดีหว่า'];
 for (let index = 10; index <= 40; index++) {
     chatRoomName.push('กุขี้เกียจตั้งชื่อแล้วพอสักทียย '+ (index - 9));
 }
@@ -82,10 +81,10 @@ const createNewChatRoom = () => {
 const sendMessage = () => {
     const inputDOM = document.getElementById("text-input");
     const userInput = inputDOM.value;
-    if (userInput === "") return;   // Prevent empty message
+    if (userInput === "") return;   
     displayShareIcon();     
     hideBGBody();
-    inputDOM.value = "";    // Clear text input
+    inputDOM.value = "";    
 
     let chatRoom;   
     if (currentChatRoomId === -1) {  // New Chat Room
@@ -96,7 +95,7 @@ const sendMessage = () => {
     }
     // Generate bot response
     const botRes = generateBotResponse(userInput);
-    // Collect data - Add user message to the new chat room
+    // Collect data 
     chatRoom.addUserMsg(userInput);
     chatRoom.addBotMsg(botRes);
 
@@ -144,7 +143,7 @@ const sendMessage = () => {
 
    
     typeWriter(afterTyping);
-    botMsgId++;     // Increment botMsgId for the next bot response box
+    botMsgId++;    
 }
 
 
@@ -249,8 +248,8 @@ const generateBotResponse = (userInput) => {
     if (userMessage === 'about this sussy baka project') {
         let message = 
         'โปรเจคนี้คือ Chat Bot โง่ๆที่ทำอะไรไม่ได้เลย '
-        +'และถ้าคุณอ่านโค้ดเป็น และเปิดดู Source code ของโปรเจคนี้จะพบว่า ไม่มีการแยก Module ใดๆทั้งสิ้นเพราะกุทำไม่เป็น 55555 '
-        +'รวมถึงโปรเจคนี้มีแต่ Frontend เท่านั้น ซึ่งทำให้เมื่อ refresh web page จะไม่บันทึกข้อมูลเดิมเอาไว้ เนื่องจาก '
+        +'และไม่มีการแยก Module ใดๆทั้งสิ้นเพราะทำไม่เป็น 55555 '
+        +'รวมถึงโปรเจคนี้มีแต่ Frontend เท่านั้น เพราะเรากากนั้นเอง'
         +'โปรเจคนี้เป็นโปรเจคที่เขียนขึ้นมาเพื่อฝึกการเขียนโปรแกรมด้วย Javascript อย่างเดียวเท่านั้น '
         +'[ต้องการข้อมูลเพิ่มเติมสามารถดูได้ที่คริปวิดีโอด้านล่าง]'
         let img = null;
@@ -258,14 +257,14 @@ const generateBotResponse = (userInput) => {
         return new BotMsg(message,img,tiktok);
     }
     // Easy Program
-    if (userMessage === 'โปรแกรมคำนวณเกรด') {
+    if (userMessage === 'โปรแกรมอะไรสักอย่าง') {
         let message = 
-         'โปรแกรมคำนวณเกรดเริ่มทำงาน! [ถ้าไม่ขี้เกียจเดะมาทำต่อ] '
+         'โปรแกรมอะไรสักอย่างเริ่มทำงาน! [ถ้าไม่ขี้เกียจเดะมาทำต่อ] '
         let img = null;
         let tiktok = null;
         return new BotMsg(message,img,tiktok);
     }
-    // Start - Normal Response 6 time before the event start
+    // Start - Normal Response 6 time 
     else if (eventName === 'start') { 
         chatRoom.setEvent('start',++eventState);
         if (eventState >= 6) chatRoom.setEvent('ไม่คุยด้วยหรอก',0); // Set Event
@@ -292,7 +291,7 @@ const generateBotResponse = (userInput) => {
                 return new BotMsg(message,img,tiktok);
             }
             else if (randomNum === 3) {
-                let message = 'สวัสดีผมคือ ChanomGPT เป็น AI ที่เทรนด้วย HTML ทำให้ผมทำห่าอะไรไม่ได้เลย แต่ถ้าคุณอยากลอง คุณสามารถถามอะไรก็ได้ เช่น ทำไมทั้งคณะมันถึงมีแต่คนเล่น Honkai กับ Genshin วะ หรือ อยากจะลองพิมอะไรมั่วๆดูก็ได้นะครับ'
+                let message = 'สวัสดีผมคือ ChanomGPT เป็น AI ที่เทรนด้วย HTML ทำให้ผมทำอะไรไม่ได้เลยนอกจากตอบแชทมั่วๆ แต่ถ้าคุณอยากลอง คุณสามารถถามอะไรก็ได้ เช่น ทำไมทั้งคณะมันถึงมีแต่คนเล่น Honkai กับ Genshin หรือ อยากจะลองพิมอะไรมั่วๆดูก็ได้นะครับ'
                 let img = null;
                 let tiktok = null;
                 return new BotMsg(message,img,tiktok);
@@ -450,7 +449,7 @@ const generateBotResponse = (userInput) => {
             chatRoom.setEvent(eventName,++eventState);
             return new BotMsg(message,img,tiktok);
         }
-        else if ((6 > eventState) && (eventState > 3)) {        // ปรับ max-width ของ img
+        else if ((6 > eventState) && (eventState > 3)) {       
             let message = 'ไม่คุยด้วยหรอก'
             let img = 'img/angrymak.jpg'; 
             let tiktok = null;
