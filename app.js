@@ -130,7 +130,7 @@ const sendMessage = () => {
             + '<div class="res-text">'
             + '<img src="' + botRes.getImg() + '">'
             + '</div></div>';
-            setTimeout(scrollToBottom, 100);
+            setTimeout(scrollToBottom, 500);
         }
         if (botRes.getTiktok() != null) { 
             let tiktokId = 'tiktok' + botRes.getTiktok(); 
