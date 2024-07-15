@@ -9,7 +9,6 @@ let sideNavigation = () => {
     const body = document.querySelector("body");
     const style = getComputedStyle(sideNav);    
     if (style.width === "0px") {
-          
         // Display
         sideNav.style.width = "260px";
         // Style Element
@@ -18,7 +17,6 @@ let sideNavigation = () => {
         chatSecDOM.style.marginLeft = "9%";
         msgSecDOM.style.marginLeft = "35%";
         body.style.backgroundPositionX = "60%";
-        
     }
     else {
         // Hide
@@ -107,7 +105,7 @@ const closePopUp = () => {
 // Add Event - Share Icon
 const shareIcon = document.querySelector(".share-icon");
 shareIcon.addEventListener("click",()=>{
-    let title = 'แชร์ไม่ได้หรอก เพราะกุทำไม่เป็น'
+    let title = 'แชร์ไม่ได้หรอก เพราะทำไม่เป็น'
     let content = '<img src="img/hehe.jpg">'
     displayPopUp(title,content);
     // Prepare data - เผื่ออนาคตมาทำต่อ
@@ -118,7 +116,7 @@ shareIcon.addEventListener("click",()=>{
 // Add Event - Attach Icon
 const attachIcon = document.querySelector(".attach-icon");
 attachIcon.addEventListener("click",()=>{
-    let title = 'แนบไฟล์ไม่ได้หรอก กุไม่มีเงินซื้อ Server 5555'
+    let title = 'แนบไฟล์ไม่ได้หรอก ไม่มีตังซื้อ Server 5555'
     let content = '<img src="img/cryy.jpg">' 
     displayPopUp(title,content);
 });
@@ -127,7 +125,7 @@ attachIcon.addEventListener("click",()=>{
 // Add Event - Contact Us
 const contactUs = document.getElementById('contact-us');
 contactUs.addEventListener("click",()=>{
-    let title = 'กุไม่ให้ Contact หรอกเดะตามมาด่ากุ 5555'
+    let title = 'ไม่ให้ Contact หรอกเดะตามมาด่าเรา 5555'
     let content = '<img src="img/cat-laugh.gif">'
     displayPopUp(title,content);
 });
@@ -150,7 +148,7 @@ upgradeVersion.forEach(i => {i.addEventListener('click',()=> {
     +'<ul>'
     +'<li>คุณจะเป็น Sigma Alpha Wolf และสามารถนำไปอวดป้าข้างบ้านได้</li>'
     +'<li>เป็นที่รักของ Indian call center</li>'
-    +'<li>เวอร์ชันอัปเกรดทำอะไรไม่ได้เหมือนเดิมอะ แม่ง Scam 5555</li>'
+    +'<li>เวอร์ชันอัปเกรดทำอะไรไม่ได้เหมือนเดิมอะโครต Scam 5555</li>'
     +'<li>คุณจะเสียใจในภายหลังอย่างแน่นอน</li>'
     +'</ul>'
     +'<h3>เงื่อนไขการอัปเกรด</h3>'
