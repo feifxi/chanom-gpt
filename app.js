@@ -247,9 +247,9 @@ const generateBotResponse = (userInput) => {
     // About this project
     if (userMessage === 'about this sussy baka project') {
         let message = 
-        'โปรเจคนี้คือ Chat Bot โง่ๆที่ตอบมั่วๆ และทำอะไรไม่ได้เลย '
-        +'และไม่ต้องแปลกใจว่าทำไม Source code ของโปรเจคนี้ไม่มีการแยก module ใดๆทั้งสิ้น รวมถึงทำไมถึงมีแต่ Frontend เท่านั้น เพราะเรากากนั้นเอง'
-        +'โปรเจคนี้เป็นโปรเจคที่เขียนขึ้นมาเพื่อฝึกการเขียนโปรแกรมด้วย Javascript อย่างเดียวเท่านั้น มือใหม่หัดขับ'
+        'โปรเจคนี้คือ Chat Bot โง่ๆที่จะตอบมั่วๆ นอกจากนั้นก็ทำห่าอะไรไม่ได้เลย '
+        +'และโปรเจคนี้ก็มีแต่ Frontend เท่านั้นไม่มี Backend นั้นก็เพราะกุกากนั้นเอง '
+        +'โปรเจคนี้มีไว้ฝึกการเขียน Javascript เท่านั้น มือใหม่หัดขับ '
         +'[ต้องการข้อมูลเพิ่มเติมสามารถดูได้ที่คริปวิดีโอด้านล่าง]'
         let img = null;
         let tiktok = 1;
@@ -284,13 +284,13 @@ const generateBotResponse = (userInput) => {
                 return new BotMsg(message,img,tiktok);
             }
             else if (randomNum === 2) {
-                let message = 'สวัสดีครับ วันนี้มีอะไรให้ช่วยมั้ยครับ(ถึงแม้ว่าจะช่วยไม่ได้ก็เหอะ555)'
+                let message = 'สวัสดีครับ วันนี้มีอะไรให้ช่วยมั้ยครับ(ถึงแม้ว่ากุจะช่วยไม่ได้ก็เหอะ)'
                 let img = null;
                 let tiktok = null;
                 return new BotMsg(message,img,tiktok);
             }
             else if (randomNum === 3) {
-                let message = 'สวัสดีผมคือ ChanomGPT เป็น AI ที่เทรนด้วย HTML ทำให้ผมทำอะไรไม่ได้เลยนอกจากตอบแชทมั่วๆ แต่ถ้าคุณอยากลอง คุณสามารถถามอะไรก็ได้ เช่น ทำไมทั้งคณะมันถึงมีแต่คนเล่น Honkai กับ Genshin หรือ อยากจะลองพิมอะไรมั่วๆดูก็ได้นะครับ'
+                let message = 'สวัสดีผมคือ ChanomGPT เป็น AI ที่เทรนด้วย HTML ทำให้ผมทำห่าอะไรไม่ได้เลยนอกจากตอบแชทมั่วๆ แต่ถ้าคุณอยากลอง คุณสามารถถามอะไรก็ได้ เช่น ทำไมทั้งคณะมันถึงมีแต่คนเล่น Honkai กับ Genshin หรือ อยากจะลองพิมอะไรมั่วๆดูก็ได้ครับ'
                 let img = null;
                 let tiktok = null;
                 return new BotMsg(message,img,tiktok);
@@ -307,7 +307,7 @@ const generateBotResponse = (userInput) => {
         ) {
             const randomNum = random(1,3);
             if (randomNum === 1) {
-                let message = 'นิสัยอย่างงี้ไงเขาเลยไม่เอา'
+                let message = 'นิสัยอย่างงี้ไงเลยไม่มีใครเอา มุแง'
                 let img = 'img/cat-laugh.gif';
                 let tiktok = null;
                 return new BotMsg(message,img,tiktok);
@@ -358,31 +358,31 @@ const generateBotResponse = (userInput) => {
                 return new BotMsg(message,img,tiktok);
             }
             else if (randomNum === 2) {
-                let message = 'คำถามง่ายๆแค่นี้ยังมาถาม กลับไปเรียนอนุบาลดีกว่ามั้ง'
+                let message = 'คำถามง่ายๆแค่นี้ยังไม่รู้ กลับไปเรียนอนุบาลดีกว่ามั้ง ป็อกๆ'
                 let img = 'img/cat-laugh.gif';
                 let tiktok = null;
                 return new BotMsg(message,img,tiktok);
             }
             else if (randomNum === 3) {
-                let message = 'สำหรับคำถาม '+userMessage+' ผมขอแนะนำให้คุณเลิกถามได้แล้ว ขี้เกียจตอบโว้ย'
+                let message = 'สำหรับคำถาม '+userMessage+' ผมขอแนะนำให้คุณเลิกถามเพราะ กุขี้เกียจตอบ'
                 let img = 'img/hoo.jpg';
                 let tiktok = null;
                 return new BotMsg(message,img,tiktok);
             }
             else if (randomNum === 4) {
-                let message = 'ตูไม่รู้'
+                let message = 'กุไม่รู้'
                 let img = 'img/muhahaha.gif';
                 let tiktok = null;
                 return new BotMsg(message,img,tiktok);
             }
             else if (randomNum === 5) {
-                let message = 'สำหรับคำถาม '+userMessage+' ผมได้ใช้ Data ทั้งหมดที่มีใน Model เพื่อหาคำตอบสำหรับคำถามของคุณและพบว่า ผมไม่รู้ครับ'
+                let message = 'สำหรับคำถาม '+userMessage+' ผมได้ใช้ Data ทั้งหมดที่มีใน Model เพื่อหาคำตอบสำหรับคำถามของคุณและพบว่า กุไม่รู้ครับ'
                 let img = 'img/cryy.jpg';
                 let tiktok = null;
                 return new BotMsg(message,img,tiktok);
             }
             else if (randomNum === 6) {
-                let message = 'สำหรับคำถาม '+userMessage+' เค้าก็ไม่รู้เหมือนกัน 5555 ไปถาม Google ดิ'
+                let message = 'สำหรับคำถาม '+userMessage+' กุก็ไม่รู้เหมือนกัน 5555 ไปถาม Google ดิ'
                 let img = 'img/cat-laugh.gif';
                 let tiktok = null;
                 return new BotMsg(message,img,tiktok);
@@ -405,13 +405,13 @@ const generateBotResponse = (userInput) => {
                 return new BotMsg(message,img,tiktok);
             }
             else if (randomNum === 2) {
-                let message = userMessage +' นี่คือคำถามหรือบ่นครับ';
+                let message = userMessage +' นี่คำถามหรือมึงบ่นครับ';
                 let img = null;
                 let tiktok = null;
                 return new BotMsg(message,img,tiktok);
             }
             else if (randomNum === 3) {
-                let message = 'ถ้าคุณงงกับวิธีการใช้งาน ผมขอยกตัวอย่างคำถามให้คุณ เช่น ทำไม Dev ถึงหน้าตาดีทุกคน หรือ อะไรคือ Skibidi dop dop yes yes';
+                let message = 'ถ้าคุณงงกับวิธีการใช้งาน ผมขอยกตัวอย่างคำถามให้คุณ เช่น ทำไมเด็ก SIT ถึงหน้าตาดีทุกคน หรือ อะไรคือ Fenumtax Skibidi วะ';
                 let img = null;
                 let tiktok = null;
                 return new BotMsg(message,img,tiktok);
@@ -442,7 +442,7 @@ const generateBotResponse = (userInput) => {
             return new BotMsg(message,img,tiktok);
         }
         else if (eventState === 3) {
-            let message = 'ตูบอกให้หยุดพิมมมมมมมม!!!'
+            let message = 'กูบอกให้หยุดพิมมมมมมมม!!!'
             let img = 'img/thor.jpg'; 
             let tiktok = null;
             chatRoom.setEvent(eventName,++eventState);
@@ -466,7 +466,7 @@ const generateBotResponse = (userInput) => {
     // Event2 
     else if (eventName === 'Sukuna VS Gojo') {
         if (eventState === 0) {
-            let message = 'เห็นแก่ความพยายามของคุณ ผมมีข้อเสนอสุดพิเศษมาให้กับคุณ ถ้าคุณตอบคำถามผมถูกผมจะมอบ ChanomGPT Plus ให้กับคุณ 1วัน แต่ถ้าคุณตอบผิด คุณจะเป็นหนี้ 18 ล้าน ตกลงมั้ย?'
+            let message = 'เห็นแก่ความพยายามของคุณ ผมมีข้อเสนอสุดพิเศษมาให้กับคุณ ถ้าคุณตอบคำถามผมได้ผมจะมอบ ChanomGPT Plus ให้กับคุณ 10 นาที แต่ถ้าคุณตอบผิด คุณจะเป็นหนี้ 18 ล้าน ตกลงมั้ย?'
             let img = null;
             let tiktok = null;
             chatRoom.setEvent(eventName,++eventState);
@@ -476,7 +476,7 @@ const generateBotResponse = (userInput) => {
             if (
                 userMessage.includes('ไม่ตกลง') || userMessage.includes('ไม่') || userMessage.includes('ไม่โอเค')
             ) {
-                let message = 'ถึงคุณจะไม่ตกลง แต่คุณก็ต้องตอบคำถามอยู่ดีนั้นแหละ5555  คำถามก็คือ สุคุนะ VS โกโจ ใครจะชนะ?';
+                let message = 'ถึงคุณจะไม่ตกลง แต่มึงก็ต้องตอบคำถามกูอยู่ดีนั้นแหละ5555  คำถามก็คือ สุคุนะ VS โกโจ ใครจะชนะ?';
                 let img = 'img/sukunaVSgojo.jpg';
                 let tiktok = null;
                 chatRoom.setEvent(eventName,++eventState);
@@ -510,7 +510,7 @@ const generateBotResponse = (userInput) => {
                 userMessage.includes('gojo') || userMessage.includes('sukuna') || userMessage.includes('ryomen') ||
                 userMessage.includes('goatjo') || userMessage.includes('satoru') 
             ) {
-                let message = 'ผิด! คำตอบคือ โจโกะชนะ ตอนนี้คุณเป็นหนี้ 18ล้าน แล้ว 55555555555';
+                let message = 'ผิด! คำตอบคือ โจโกะชนะ ตอนนี้มึงเป็นหนี้ 18ล้าน แล้ว 55555555555';
                 let img = 'img/jogoat.png';
                 let tiktok = null;
                 chatRoom.setEvent(eventName,++eventState);
@@ -520,7 +520,7 @@ const generateBotResponse = (userInput) => {
                 userMessage.includes('โจโกะ') || userMessage.includes('โจโก') || userMessage.includes('jogo') ||
                 userMessage.includes('jogoat') 
             ) {
-                let message = 'ผิด!! คำตอบคือ มิวะชนะ ตอนนี้คุณเป็นหนี้ 18ล้าน แล้ว 55555555555';
+                let message = 'ผิด!! คำตอบคือ มิวะชนะ ตอนนี้มึงเป็นหนี้ 18ล้าน แล้ว 55555555555';
                 let img = 'img/miwa.jpg';
                 let tiktok = null;
                 chatRoom.setEvent(eventName,++eventState);
@@ -529,7 +529,7 @@ const generateBotResponse = (userInput) => {
             else if (
                 userMessage.includes('มิวะ') || userMessage.includes('miwa')
             ) {
-                let message = 'ถูกต้อง! คำตอบคือ มิวะชนะ แต่ผมรู้ว่าคุณโกงเพราะงั้น คุณก็ยังเป็นหนี้ 18ล้าน อยู่ดีแหละ';
+                let message = 'ถูกต้อง! คำตอบคือ มิวะชนะ แต่ผมรู้ว่าคุณโกงเพราะงั้น มึงก็ยังเป็นหนี้ 18ล้าน อยู่ดีแหละ';
                 let img = 'img/hoo.jpg';
                 let tiktok = null;
                 chatRoom.setEvent(eventName,++eventState);
