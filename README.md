@@ -1,1 +1,1 @@
-Visit this goofy ahh project https://feifxi.github.io/ChanomGPT/
+Visit this goofy ahh project [Here🤑](https://chanom-gpt.vercel.app/)
